@@ -8,7 +8,7 @@ Finds ML estimate or posterior mode of cell probabilities under
 a hierarchical loglinear model
 }
 \usage{
-ecm.cat(s, margins, start, prior=1, showits=T, maxits=1000,
+ecm.cat(s, margins, start, prior=1, showits=TRUE, maxits=1000,
 eps=0.0001)
 }
 \arguments{

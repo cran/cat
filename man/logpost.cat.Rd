@@ -55,3 +55,4 @@ logpost.cat(s,thetahat1)               # loglikelihood at thetahat1
 \keyword{models}
 % Converted by Sd2Rd version 1.21.
 %%FT 15/07/2003 : some links added and changes to examples.
+

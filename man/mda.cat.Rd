@@ -12,7 +12,7 @@ more quickly than \code{da.cat} when the pattern of observed data is nearly
 monotone. 
 }
 \usage{
-mda.cat(s, start, steps=1, prior=0.5, showits=F)
+mda.cat(s, start, steps=1, prior=0.5, showits=FALSE)
 }
 \arguments{
 \item{s}{

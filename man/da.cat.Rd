@@ -10,7 +10,7 @@ under a saturated multinomial model. May be used in conjunction with
 \code{imp.cat} to create proper multiple imputations.
 }
 \usage{
-da.cat(s, start, prior=0.5, steps=1, showits=F)
+da.cat(s, start, prior=0.5, steps=1, showits=FALSE)
 }
 \arguments{
 \item{s}{

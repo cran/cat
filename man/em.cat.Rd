@@ -8,7 +8,7 @@ Finds ML estimate or posterior mode of cell probabilities under
 the saturated multinomial model.
 }
 \usage{
-em.cat(s, start, prior=1, showits=T, maxits=1000,
+em.cat(s, start, prior=1, showits=TRUE, maxits=1000,
 eps=0.0001)
 }
 \arguments{

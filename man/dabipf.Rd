@@ -11,7 +11,7 @@ under hierarchical loglinear models. May be used in conjunction with
 \code{imp.cat} to create proper multiple imputations.
 }
 \usage{
-dabipf(s, margins, start, steps=1, prior=0.5, showits=F)
+dabipf(s, margins, start, steps=1, prior=0.5, showits=FALSE)
 }
 \arguments{
 \item{s}{
