@@ -11,7 +11,6 @@
     \item{V1}{Victimization status on second occasion (1=No, 2=Yes)}
     \item{Freq}{Count}  }
 }
-}
 
 \source{
  Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.}

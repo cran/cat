@@ -14,7 +14,6 @@
     \item{S}{Sex: Male or Female}
     \item{Freq}{Count}  }
 }
-}
 \note{A matrix \code{belt} with similarly named columns exists that can be input
   directly to functions which do not admit data frames. Both the data
   frame and matrix include all complete and incomplete cases, from the

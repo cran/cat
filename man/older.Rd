@@ -16,7 +16,6 @@
     \item{S}{Sex: Male or Female}
     \item{Freq}{Count}  }
 }
-}
 \note{A matrix \code{older} with similarley named columns exists that can be input
   directly to functions which do not admit data frames.}
 \source{

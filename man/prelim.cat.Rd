@@ -68,7 +68,6 @@ Chapters 7--8 of Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.
 }
 \seealso{
   \code{\link{em.cat}},  \code{\link{ecm.cat}},  \code{\link{da.cat}},\code{\link{mda.cat}},  \code{\link{dabipf}},  \code{\link{imp.cat}}}
-}
 \examples{
 data(crimes)
 crimes

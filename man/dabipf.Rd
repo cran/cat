@@ -62,8 +62,6 @@ may produce mle's with expected cell counts of zero. This difficulty
 can be overcome by using as a starting value a posterior mode
 calculated by \code{ecm.cat} with prior hyperparameters greater than one.
 }
-\seealso{
-}
 \examples{
 #
 #  Example 1   Based on Schafer's p. 329 and ss. This is a toy version,
