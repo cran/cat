@@ -1,6 +1,6 @@
 Package: cat
-Version: 0.0-5
-Date: 2004/02/02
+Version: 0.0-6
+Date: 2004/10/13
 Title: Analysis of categorical-variable datasets with missing values
 Author: Ported to R by Ted Harding and Fernando Tusell
         Original by Joseph L. Schafer <jls@stat.psu.edu>. 
