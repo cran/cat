@@ -1,6 +1,6 @@
-c6e91ac9d6e66f1eb7ac254636d897e3 *DESCRIPTION
+805afe1c162ca2b802462e6f220477be *DESCRIPTION
 bf230087942b366995f519c83c144530 *LICENSE
-9da27e63c5f00e2fece463099b20fefc *NAMESPACE
+57cde3909b5c69fc04333197519713ea *NAMESPACE
 ade94ed7541ffdf0fa48358268e3e4ce *R/cat.R
 00acc73ab4e0d5ae8ca2c3c18fb9a297 *data/belt.rda
 b2407d3452089c87d2ef8fecf03b9105 *data/crimes.rda
@@ -21,3 +21,4 @@ db2dee1c095a6460c419c54d1efe258b *man/older.Rd
 16d2fbf12ad529fd7d51952e751aa85a *man/prelim.cat.Rd
 3424a5cf5a57a794ce14a1af3e145309 *man/rngseed.Rd
 f289db436b0d6fb1ecee7bf147d1bcd9 *src/cat.f
+c263dbb93b736221905607d5e0ec3266 *src/init.c
