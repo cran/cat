@@ -74,7 +74,7 @@ structural zero cells will always be zero.
 }
 \references{
 Schafer (1996), \emph{Analysis of Incomplete Multivariate Data.}
-  Chapman \& Hall, Chapter 8 
+  Chapman & Hall, Chapter 8 
 
 X. L. Meng and  D. B. Rubin (1991),
 "IPF for contingency tables with missing data via the ECM algorithm,"

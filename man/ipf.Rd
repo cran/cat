@@ -71,7 +71,7 @@ Agresti, A. (1990) Categorical Data Analysis. J. Wiley & Sons, New
 York.
 
 Schafer (1996) \emph{Analysis of Incomplete Multivariate Data.}
-  Chapman \& Hall, Chapter 8.
+  Chapman & Hall, Chapter 8.
 }
 
 \seealso{

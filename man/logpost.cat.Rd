@@ -38,7 +38,7 @@ missing-data mechanism.
 }
 \references{
 Schafer (1996) \emph{Analysis of Incomplete Multivariate Data.}
-  Chapman \& Hall. Section 7.3.
+  Chapman & Hall. Section 7.3.
 }
 \seealso{
 \code{\link{prelim.cat}}, \code{\link{em.cat}}, \code{\link{ecm.cat}}

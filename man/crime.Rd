@@ -14,7 +14,7 @@
 
 \source{
  Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.}
- Chapman \& Hall, Section 7.4.3, which cites
+ Chapman & Hall, Section 7.4.3, which cites
 
  Kadane, J.B. (1985) Is victimization chronic? A Bayesian Analysis of
  multinomial missing data, \emph{Journal of Econometrics}, vol. 29, p. 47-67.

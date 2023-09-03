@@ -1,6 +1,6 @@
 Package: cat
-Version: 0.0-7
-Date: 2022-04-30
+Version: 0.0-9
+Date: 2023-09-02
 Title: Analysis and Imputation of Categorical-Variable Datasets with
         Missing Values
 Author: Ported to R by Ted Harding and Fernando Tusell. Original by
@@ -8,9 +8,9 @@ Author: Ported to R by Ted Harding and Fernando Tusell. Original by
 Maintainer: Fernando Tusell <fernando.tusell@ehu.es>
 Description: Performs analysis of categorical-variable with missing values. Implements methods from Schafer, JL, Analysis of Incomplete Multivariate Data, Chapman and Hall.
 License: file LICENSE
-Packaged: 2022-05-31 08:26:27 UTC; etptupaf
+Packaged: 2023-09-02 18:41:07 UTC; etptupaf
 Repository: CRAN
-Date/Publication: 2022-06-03 08:50:10 UTC
+Date/Publication: 2023-09-03 13:50:02 UTC
 NeedsCompilation: yes
 License_restricts_use: no
 License_is_FOSS: yes

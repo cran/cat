@@ -20,6 +20,6 @@
   directly to functions which do not admit data frames.}
 \source{
  Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.}
-  Chapman \& Hall, Section 7.3.5.
+  Chapman & Hall, Section 7.3.5.
 }
 \keyword{datasets}

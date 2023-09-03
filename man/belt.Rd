@@ -20,7 +20,7 @@
   police reports and follow up study.}
 \source{
  Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.}
- Chapman \& Hall, Section 7.4.3, which cites
+ Chapman & Hall, Section 7.4.3, which cites
 
  Hochberg, Y. (1977) On the use of double sampling schemes in analyzing
  categorical data with misclassification errors, \emph{JASA}, vol. 71,

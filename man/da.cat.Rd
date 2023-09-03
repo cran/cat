@@ -58,7 +58,7 @@ by the function \code{rngseed} before this function can be used.
 }
 \references{
 Schafer (1996) \emph{Analysis of Incomplete Multivariate Data,}
-  Chapman \& Hall, Chapter 7.
+  Chapman & Hall, Chapter 7.
 }
 \seealso{
 \code{\link{prelim.cat}}, \code{\link{rngseed}}, \code{\link{mda.cat}}, \code{\link{imp.cat}}.

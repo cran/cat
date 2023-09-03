@@ -60,7 +60,7 @@ C************************************************************************
         integer m,mmis,dmis,ncells
         double precision sum,theta(ncells)
         call initc(p,c,mc,nmc)
-        sum=dfloat(0)
+        sum=dble(0)
         mmis=0
         do 1 i=1,dmis
            if(i.ne.1)then
@@ -85,7 +85,7 @@ C Note: elements of theta need not sum to one.
         integer patt,grpno,dmis,m,mmis,err,nmc
         double precision sum,theta(ncells),x(ncells)
         do 1 i=1,ncells
-           x(i)=dfloat(0)
+           x(i)=dble(0)
 1       continue
         err=0
         grpno=0
@@ -94,11 +94,11 @@ C Note: elements of theta need not sum to one.
            if(nmc.eq.0)then
               do 50 k=1,mdpgrp(patt)
                  grpno=grpno+1
-                 if(theta(mobs(grpno)).le.dfloat(0))then
+                 if(theta(mobs(grpno)).le.dble(0))then
                     err=1
                     goto 250
                  endif
-                 x(mobs(grpno))=x(mobs(grpno))+dfloat(nmobs(grpno))
+                 x(mobs(grpno))=x(mobs(grpno))+dble(nmobs(grpno))
 50            continue
            else
               call gtdmis(p,d,mc,nmc,dmis)
@@ -106,7 +106,7 @@ C Note: elements of theta need not sum to one.
                  grpno=grpno+1
                  call sumc(p,c,mc,nmc,d,jmp,mobs(grpno),dmis,
      /                ncells,theta,sum)
-                 if(sum.le.dfloat(0))then
+                 if(sum.le.dble(0))then
                     err=1
                     goto 250
                  endif
@@ -118,7 +118,7 @@ C Note: elements of theta need not sum to one.
                        call gtmmis(p,c,mc,nmc,jmp,mmis)
                     endif
                     m=mobs(grpno)+mmis
-                    x(m)=x(m)+dfloat(nmobs(grpno))*theta(m)/sum
+                    x(m)=x(m)+dble(nmobs(grpno))*theta(m)/sum
 130              continue
 150           continue
            endif
@@ -139,7 +139,7 @@ C Note: Elements of theta need not sum to one.
         integer patt,grpno,dmis,m,mmis,err,nmc
         double precision sum,theta(ncells),x(ncells),sum1,u
         do 1 i=1,ncells
-           x(i)=dfloat(0)
+           x(i)=dble(0)
 1       continue
         err=0
         grpno=0
@@ -148,11 +148,11 @@ C Note: Elements of theta need not sum to one.
            if(nmc.eq.0)then
               do 50 k=1,mdpgrp(patt)
                  grpno=grpno+1
-                 if(theta(mobs(grpno)).le.dfloat(0))then
+                 if(theta(mobs(grpno)).le.dble(0))then
                     err=1
                     goto 250
                  endif
-                 x(mobs(grpno))=x(mobs(grpno))+dfloat(nmobs(grpno))
+                 x(mobs(grpno))=x(mobs(grpno))+dble(nmobs(grpno))
 50            continue
            else
               call gtdmis(p,d,mc,nmc,dmis)
@@ -160,7 +160,7 @@ C Note: Elements of theta need not sum to one.
                  grpno=grpno+1
                  call sumc(p,c,mc,nmc,d,jmp,mobs(grpno),dmis,
      /                ncells,theta,sum)
-                 if(sum.le.dfloat(0))then
+                 if(sum.le.dble(0))then
                     err=1
                     goto 250
                  endif
@@ -178,7 +178,7 @@ C Distribute data at random
                        m=mobs(grpno)+mmis
                        sum1=sum1+(theta(m)/sum)
                        if((sum1.gt.u).or.(i.eq.dmis))then
-                          x(m)=x(m)+dfloat(1)
+                          x(m)=x(m)+dble(1)
                           goto 135
                        endif
 130                 continue
@@ -201,10 +201,10 @@ C is set to one.
         integer ncells,err
         double precision sum,x(ncells),theta(ncells)
         err=0
-        sum=dfloat(0)
+        sum=dble(0)
         do 5 i=1,ncells
-           if(x(i).ne.dfloat(-999))then
-              if(x(i).le.dfloat(0))then
+           if(x(i).ne.dble(-999))then
+              if(x(i).le.dble(0))then
                  err=1
                  goto 15
               else
@@ -214,10 +214,10 @@ C is set to one.
            endif
 5       continue
         do 10 i=1,ncells
-           if(x(i).ne.dfloat(-999))then
+           if(x(i).ne.dble(-999))then
               theta(i)=theta(i)/sum
            else
-              theta(i)=dfloat(0)
+              theta(i)=dble(0)
            endif
 10      continue
  15     continue
@@ -234,7 +234,7 @@ C theta is zero, then sets err=1.
         integer dmis,patt,c(p),mc(p),grpno,nmc,err
         double precision sum,ll,tmp,theta(ncells)
         err=0
-        ll=dfloat(0)
+        ll=dble(0)
         grpno=0
         do 200 patt=1,npatt
            call gtmc(p,npatt,r,patt,mc,nmc,p)
@@ -243,8 +243,8 @@ C theta is zero, then sets err=1.
               grpno=grpno+1
               call sumc(p,c,mc,nmc,d,jmp,mobs(grpno),dmis,
      /             ncells,theta,sum)
-              tmp=dfloat(nmobs(grpno))
-              if(sum.le.dfloat(0))then
+              tmp=dble(nmobs(grpno))
+              if(sum.le.dble(0))then
                  err=1
                  goto 250
               else
@@ -393,7 +393,7 @@ C If posterior is improper, sets err to 2.
 C put prior counts in dtable, initialize newtheta to all ones
         do 5 i=1,ncells
            dtable(i)=prior(i)
-           newtheta(i)=dfloat(1)
+           newtheta(i)=dble(1)
 5       continue
         grpno=0
         do 400 j=p,1,-1
@@ -417,7 +417,7 @@ C Distribute data at random by table sampling
                     call initc(p,c,mc,nmc)
                     mmis=0
                     u=dble(rangen(0))
-                    sum1=dfloat(0)
+                    sum1=dble(0)
                     do 130 i=1,dmis
                        if(i.ne.1)then
                           call advc(p,c,d,mc,nmc)
@@ -426,11 +426,11 @@ C Distribute data at random by table sampling
                        m=mobs(grpno)+mmis
                        sum1=sum1+(oldtheta(m)/sum)
                        if((sum1.gt.u).or.(i.eq.dmis))then
-                          if(oldtheta(m).eq.dfloat(0))then
+                          if(oldtheta(m).eq.dble(0))then
                              err=1
                              goto 450
                           endif
-                          dtable(m)=dtable(m)+dfloat(1)
+                          dtable(m)=dtable(m)+dble(1)
                           goto 135
                        endif
 130                 continue
@@ -444,16 +444,16 @@ C and oldtheta
            nii=ncells/jmpii
            do 350 outer=1,jmp(j)
               m=outer-jmp(j)
-              sum=dfloat(0)
-              sum1=dfloat(0)
-              sum2=dfloat(0)
+              sum=dble(0)
+              sum1=dble(0)
+              sum2=dble(0)
               zflag=1
               do 250 inner=1,d(j)
                  m=m+jmp(j)
-                 if(dtable(m).eq.dfloat(-999))then
-                    u=dfloat(0)
+                 if(dtable(m).eq.dble(-999))then
+                    u=dble(0)
                  else
-                    if(dtable(m).le.dfloat(0))then
+                    if(dtable(m).le.dble(0))then
                        err=2
                        goto 450
                     else
@@ -472,7 +472,7 @@ C and oldtheta
 250           continue
               oldtheta(outer)=sum2
               if(zflag.eq.1)then
-                 dtable(outer)=dfloat(-999)
+                 dtable(outer)=dble(-999)
               else
                  dtable(outer)=sum1
               endif
@@ -584,7 +584,7 @@ C to the margins of table. Margins to be fit are specified in con.
                     if(fit(m).ge.eps) then
                        fit(m)=fit(m)*(sumt/sumf)
                     else
-                       fit(m)=dfloat(0)
+                       fit(m)=dble(0)
                     endif
 80               continue
               endif
@@ -608,7 +608,7 @@ C updated value.
         err=0
         posn=0
         do 100 tabno=1,ntab
-           sum3=dfloat(0)
+           sum3=dble(0)
            call gtmarg(ncon,con,posn,p,marg,nmarg)
            call gtrest(p,marg,nmarg,rest,nrest)
            call gtdmis(p,d,marg,nmarg,dmarg)
@@ -657,8 +657,8 @@ C************************************************************************
         integer m,mmis,dmis,ncells
         double precision sum1,sum2,table1(ncells),table2(ncells)
         call initc(p,c,mc,nmc)
-        sum1=dfloat(0)
-        sum2=dfloat(0)
+        sum1=dble(0)
+        sum2=dble(0)
         mmis=0
         do 1 i=1,dmis
            if(i.ne.1)then
@@ -679,8 +679,8 @@ C************************************************************************
         double precision sum1,sum2,table1(ncells),table2(ncells),
      /    prior(ncells)
         call initc(p,c,mc,nmc)
-        sum1=dfloat(0)
-        sum2=dfloat(0)
+        sum1=dble(0)
+        sum2=dble(0)
         mmis=0
         do 1 i=1,dmis
            if(i.ne.1)then
@@ -689,7 +689,7 @@ C************************************************************************
            endif
            m=mobs+mmis
            sum2=sum2+table2(m)
-           if(prior(m).ne.dfloat(-999)) then
+           if(prior(m).ne.dble(-999)) then
               sum1=sum1+table1(m)+prior(m)
               zflag=1
            endif

@@ -137,7 +137,7 @@ Rubin (1987) \emph{Multiple Imputation for Nonresponse in
     Surveys,} Wiley, New York, 
   
 Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.}
-Chapman \& Hall, Chapter 8.
+Chapman & Hall, Chapter 8.
 }
 \keyword{models}
 

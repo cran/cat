@@ -167,7 +167,7 @@ summary(lodds)
 }
 \references{
 Schafer (1996)  \emph{Analysis of Incomplete Multivariate Data.}
-  Chapman \& Hall, Chapter 8.
+  Chapman & Hall, Chapter 8.
 }
 \keyword{models}
 % Converted by Sd2Rd version 1.21.
